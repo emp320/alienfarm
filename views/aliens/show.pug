@@ -1,4 +1,9 @@
 extends ../shared/template
 block title
-  h1 Alien #35
+  h1= `Alien: ${alien.name}`
 block content
+  div.row
+    div.col-sm-4
+      h6= `Photo: ${alien.photo}`
+    div.col-sm-4
+      h6= `Planet: ${alien.planet}`

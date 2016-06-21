@@ -1,4 +1,10 @@
 extends ../shared/template
 block title
-  h1 Alien list
+  h1 Aliens
 block content
+  div
+      div.row
+        each item in aliens
+          div.col-sm-4
+              a(href=`/aliens/${item.id} `)
+                h4= item.name
